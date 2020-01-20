@@ -21,7 +21,7 @@ INDENT_FLAGS = -TFILE -Tsize_t -Tuint8_t
 .PHONY: clean
 
 TESTS_ERRMSG = t/t_errmsg
-EXAMPLES = ex/ex_1
+EXAMPLES = ex/ex_errmsg_1
 
 errmsg.o: errmsg.c errmsg.h
 	$(CC) -c $(CPPFLAGS) $(CFLAGS) -o $@ errmsg.c
