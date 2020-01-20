@@ -1,2 +1,3 @@
-# hodgepodge
-A collection of C-scrap utilities.
+# A hodgepodge of C-scraps 0.0.0.
+
+
