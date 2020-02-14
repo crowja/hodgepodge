@@ -20,7 +20,7 @@ INDENT_FLAGS = -TFILE -Tsize_t -Tuint8_t
 .PHONY: indent_errmsg
 .PHONY: clean
 
-TESTS_ERRMSG = t/t_errmsg
+TESTS_ERRMSG = t/test-errmsg
 EXAMPLES = ex/ex_errmsg_1
 
 errmsg.o: errmsg.c errmsg.h
