@@ -10,6 +10,7 @@ LDFLAGS =
 LDFLAGS_EFENCE = -L/usr/lib -lefence $(LDFLAGS)
 #VALGRIND_FLAGS = --verbose --leak-check=full --undef-value-errors=yes --track-origins=yes
 VALGRIND_FLAGS = --leak-check=full --undef-value-errors=yes
+STAMPER = stamper
 
 INDENT_FLAGS = -TFILE -Tsize_t -Tuint8_t
 
@@ -18,6 +19,7 @@ INDENT_FLAGS = -TFILE -Tsize_t -Tuint8_t
 .PHONY: echeck
 .PHONY: indent
 .PHONY: indent_errmsg
+.PHONY: stamp
 .PHONY: clean
 
 TESTS_ERRMSG = t/test-errmsg
@@ -41,8 +43,12 @@ check_errmsg:
 indent: indent_errmsg
 
 indent_errmsg:
-	@stamper.bash errmsg.c && indent $(INDENT_FLAGS) errmsg.c
-	@stamper.bash errmsg.h && indent $(INDENT_FLAGS) errmsg.h
+	@indent $(INDENT_FLAGS) errmsg.c
+	@indent $(INDENT_FLAGS) errmsg.h
+
+stamp:
+	@$(STAMPER) errmsg.c
+	@$(STAMPER) errmsg.h
 
 clean:
 	@/bin/rm -f *.o *~ *.BAK *.bak core.* a.out
