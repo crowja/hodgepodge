@@ -1,6 +1,6 @@
 /**
  *  @file errmsg.c
- *  @version 0.1.0-dev0
+ *  @version 0.1.0
  *  @date Mon Feb 17, 2020 05:21:45 PM CST
  *  @copyright 2020 John A. Crow <crowja@gmail.com>
  *  @license Unlicense <http://unlicense.org/>
