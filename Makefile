@@ -5,8 +5,8 @@ GCC_SANITIZE_FLAGS = -fsanitize=address -fsanitize=undefined -fno-omit-frame-poi
 OTHER_SOURCE = -I./t
 OTHER_INCLUDE =
 CPPFLAGS = -g -I. $(OTHER_INCLUDE)
-##CFLAGS = $(GCC_STRICT_FLAGS) 
-CFLAGS = 
+CFLAGS = $(GCC_STRICT_FLAGS) 
+##CFLAGS = 
 LDFLAGS =
 LIBS = -lm
 LDFLAGS_EFENCE = $(LDFLAGS)
