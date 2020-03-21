@@ -1,6 +1,6 @@
 /**
  *  @file dtype.c
- *  @version 0.1.0
+ *  @version 1.0.0-dev0
  *  @date Sat Mar 21, 2020 02:49:42 PM CDT
  *  @copyright 2020 John A. Crow <crowja@gmail.com>
  *  @license Unlicense <http://unlicense.org/>
