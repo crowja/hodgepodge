@@ -1,7 +1,7 @@
 /**
  *  @file dtype.c
  *  @version 0.1.0
- *  @date Mon Feb 17, 2020 05:21:45 PM CST
+ *  @date Sat Mar 21, 2020 02:49:42 PM CDT
  *  @copyright 2020 John A. Crow <crowja@gmail.com>
  *  @license Unlicense <http://unlicense.org/>
  *  @see https://github.com/crowja/hodgepodge
