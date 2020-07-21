@@ -43,9 +43,9 @@ errmsg_error(FILE *out, const char *info)
    fprintf(out, COLOR_RED "[ERROR]" COLOR_RESET);
 
    if (NULL != info)
-      printf(" %s", info);
+      fprintf(out, " %s", info);
 
-   printf("\n");
+   fprintf(out, "\n");
 }
 
 void
@@ -54,9 +54,9 @@ errmsg_success(FILE *out, const char *info)
    fprintf(out, COLOR_GREEN "[SUCCESS]" COLOR_RESET);
 
    if (NULL != info)
-      printf(" %s", info);
+      fprintf(out, " %s", info);
 
-   printf("\n");
+   fprintf(out, "\n");
 }
 
 void
@@ -65,7 +65,7 @@ errmsg_warning(FILE *out, const char *info)
    fprintf(out, COLOR_YELLOW "[WARNING]" COLOR_RESET);
 
    if (NULL != info)
-      printf(" %s", info);
+      fprintf(out, " %s", info);
 
-   printf("\n");
+   fprintf(out, "\n");
 }
