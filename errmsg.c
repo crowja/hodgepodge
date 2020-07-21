@@ -15,22 +15,22 @@
 #ifdef  COLOR_RED
 #undef  COLOR_RED
 #endif
-#define COLOR_RED        "\x1B[31m"
+#define COLOR_RED        "\x1B[1;31m"
 
 #ifdef  COLOR_GREEN
 #undef  COLOR_GREEN
 #endif
-#define COLOR_GREEN      "\x1B[32m"
+#define COLOR_GREEN      "\x1B[1;32m"
 
 #ifdef  COLOR_YELLOW
 #undef  COLOR_YELLOW
 #endif
-#define COLOR_YELLOW     "\x1B[33m"
+#define COLOR_YELLOW     "\x1B[1;33m"
 
 #ifdef  COLOR_BLUE
 #undef  COLOR_BLUE
 #endif
-#define COLOR_BLUE       "\x1B[34m"
+#define COLOR_BLUE       "\x1B[1;34m"
 
 #ifdef  COLOR_RESET
 #undef  COLOR_RESET
